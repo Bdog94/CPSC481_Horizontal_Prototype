@@ -1,1 +1,0 @@
-# CPSC481_Horizontal_Prototype
