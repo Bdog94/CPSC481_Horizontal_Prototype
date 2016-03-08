@@ -68,6 +68,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddNote.xaml.cs">
+      <DependentUpon>AddNote.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -77,12 +80,19 @@
     <Compile Include="MenuCatagories.xaml.cs">
       <DependentUpon>MenuCatagories.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OrderAdded.xaml.cs">
+      <DependentUpon>OrderAdded.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SelectTable.xaml.cs">
       <DependentUpon>SelectTable.xaml</DependentUpon>
     </Compile>
     <Compile Include="Soup.xaml.cs">
       <DependentUpon>Soup.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddNote.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MenuCatagories.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OrderAdded.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

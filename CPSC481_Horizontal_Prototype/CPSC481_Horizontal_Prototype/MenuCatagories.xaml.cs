@@ -17,14 +17,35 @@ namespace CPSC481_Horizontal_Prototype
     /// <summary>
     /// Interaction logic for MenuCatagories.xaml
     /// </summary>
-    public partial class MenuCatagories : Window
+    public partial class MenuCatagories : UserControl
     {
         public MenuCatagories()
         {
             InitializeComponent();
+            btnNextItem.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToTableView();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToSoupSaladView();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
         {
 
         }

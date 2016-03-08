@@ -10,23 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CPSC481_Horizontal_Prototype
 {
     /// <summary>
-    /// Interaction logic for SelectTable.xaml
+    /// Interaction logic for OrderAdded.xaml
     /// </summary>
-    public partial class SelectTable : UserControl
+    public partial class OrderAdded : UserControl
     {
-        public SelectTable()
+        public OrderAdded()
         {
             InitializeComponent();
+            lblNote.Content = MainWindow.note;
         }
 
-        private void switchToMenuCatagories(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.switchToMenuCatagories();
+            MessageBox.Show("Send to Kitchen");
+            MainWindow.switchToTableView();
+            
         }
     }
 }

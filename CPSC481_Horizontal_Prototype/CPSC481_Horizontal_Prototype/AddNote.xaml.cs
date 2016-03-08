@@ -10,23 +10,35 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CPSC481_Horizontal_Prototype
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for AddNote.xaml
     /// </summary>
-    public partial class LoginWindow : UserControl
+    public partial class AddNote : UserControl
     {
-        public LoginWindow()
+        public AddNote()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.switchToTableView();
+            txtNote.Clear();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void changeToOrderAdded(object sender, RoutedEventArgs e)
+        {
+            MainWindow.note = txtNote.Text;
+            MainWindow.switchToOrderAddedView();
         }
     }
 }
