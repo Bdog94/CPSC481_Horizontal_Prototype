@@ -3,6 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Soup" Height="300" Width="300">
     <Grid>
-        
+        <Button Content="Clam Soup" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Select Table" HorizontalAlignment="Left" Margin="207,48,0,0" VerticalAlignment="Top" Width="75" Height="62"/>
+        <Button Content="Menu&#xA;" HorizontalAlignment="Left" Margin="207,125,0,0" VerticalAlignment="Top" Width="75" Height="62"/>
+        <Button Content="Tomato soup" HorizontalAlignment="Left" Margin="110,62,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Caesar Salad" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="House salad" HorizontalAlignment="Left" Margin="110,95,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
