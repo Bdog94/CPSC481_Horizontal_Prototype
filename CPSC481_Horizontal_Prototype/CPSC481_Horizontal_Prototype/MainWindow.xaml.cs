@@ -20,6 +20,7 @@ namespace CPSC481_Horizontal_Prototype
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Soup s = new Soup();
         public MainWindow()
         {
             InitializeComponent();
@@ -27,6 +28,12 @@ namespace CPSC481_Horizontal_Prototype
 
         public void CreateMyMultilineTextBox()
         {
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Soup s = new Soup();
+            stkPanel.Children.Add(s);
         }
     }
 }

@@ -17,11 +17,39 @@ namespace CPSC481_Horizontal_Prototype
     /// <summary>
     /// Interaction logic for Soup.xaml
     /// </summary>
-    public partial class Soup : Window
+    public partial class Soup : UserControl
     {
         public Soup()
         {
             InitializeComponent();
+            popOverAllergies.Visibility = Visibility.Hidden;
+        }
+
+        private void showPopOverAllergies(object sender, MouseButtonEventArgs e)
+        {
+            popOverAllergies.Visibility = Visibility.Visible;
+            Label testLbl = new Label();
+            testLbl.Content = "Gluten Free";
+
+            popOverAllergies.Children.Add(testLbl);
+        }
+
+        private void ShowAllergies(object sender, MouseEventArgs e)
+        {
+            popOverAllergies.Visibility = Visibility.Visible;
+            Label testLbl = new Label();
+            testLbl.Content = "Gluten Free";
+
+            popOverAllergies.Children.Add(testLbl);
+        }
+
+        private void HideAllergies(object sender, MouseEventArgs e)
+        {
+            popOverAllergies.Visibility = Visibility.Hidden;
+
+
+
+           
         }
     }
 }
