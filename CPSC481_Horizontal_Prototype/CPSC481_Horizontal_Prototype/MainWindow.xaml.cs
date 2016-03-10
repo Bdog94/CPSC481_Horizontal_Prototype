@@ -22,6 +22,8 @@ namespace CPSC481_Horizontal_Prototype
     {
         static MainWindow m;
         public static String note;
+        public static String tableNum;
+        static System.Windows.Threading.DispatcherTimer dispatcherTimer;
         //Soup s = new Soup();
         public MainWindow()
         {
@@ -29,12 +31,23 @@ namespace CPSC481_Horizontal_Prototype
             InitializeComponent();
             LoginWindow lw = new LoginWindow();
             stkPanel.Children.Add(lw);
+            
         }
 
-        public void CreateMyMultilineTextBox()
+        public static void FoodFromKitchen()
         {
-            
+            dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
+            dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
+            dispatcherTimer.Interval = new TimeSpan(0,0,5);
+            dispatcherTimer.Start();
 
+
+
+        }
+        private static void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            dispatcherTimer.Stop();
+            MessageBox.Show("Food is ready \n" + "Table Num: " + tableNum + "\nFood: ");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

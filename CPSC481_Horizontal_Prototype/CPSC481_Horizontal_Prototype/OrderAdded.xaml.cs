@@ -28,7 +28,8 @@ namespace CPSC481_Horizontal_Prototype
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Send to Kitchen");
+            MessageBox.Show("Sent to Kitchen");
+            MainWindow.FoodFromKitchen();
             MainWindow.switchToTableView();
             
         }

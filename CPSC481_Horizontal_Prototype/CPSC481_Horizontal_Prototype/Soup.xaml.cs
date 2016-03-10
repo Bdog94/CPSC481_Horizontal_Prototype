@@ -22,25 +22,18 @@ namespace CPSC481_Horizontal_Prototype
         public Soup()
         {
             InitializeComponent();
+            lblTableNum.Content = MainWindow.tableNum;
             popOverAllergies.Visibility = Visibility.Hidden;
         }
 
         private void showPopOverAllergies(object sender, MouseButtonEventArgs e)
         {
             popOverAllergies.Visibility = Visibility.Visible;
-            Label testLbl = new Label();
-            testLbl.Content = "Gluten Free";
-
-            popOverAllergies.Children.Add(testLbl);
         }
 
         private void ShowAllergies(object sender, MouseEventArgs e)
         {
             popOverAllergies.Visibility = Visibility.Visible;
-            Label testLbl = new Label();
-            testLbl.Content = "Gluten Free";
-
-            popOverAllergies.Children.Add(testLbl);
         }
 
         private void HideAllergies(object sender, MouseEventArgs e)
@@ -69,12 +62,17 @@ namespace CPSC481_Horizontal_Prototype
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            MainWindow.FoodFromKitchen();
+            MessageBox.Show("Sent to Kitchen");
             MainWindow.switchToTableView();
+        
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            MainWindow.switchToAddNoteView();
+            MainWindow.switchToMenuCatagories();
         }
+
+       
     }
 }

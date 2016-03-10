@@ -26,7 +26,10 @@ namespace CPSC481_Horizontal_Prototype
 
         private void switchToMenuCatagories(object sender, RoutedEventArgs e)
         {
+            Button b = e.Source as Button;
+            MainWindow.tableNum = b.Content as String; 
             MainWindow.switchToMenuCatagories();
+           
         }
     }
 }

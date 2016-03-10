@@ -23,6 +23,7 @@ namespace CPSC481_Horizontal_Prototype
         public AddNote()
         {
             InitializeComponent();
+            lblTableNum.Content = MainWindow.tableNum;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -32,7 +33,7 @@ namespace CPSC481_Horizontal_Prototype
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            MainWindow.switchToSoupSaladView();
         }
 
         private void changeToOrderAdded(object sender, RoutedEventArgs e)

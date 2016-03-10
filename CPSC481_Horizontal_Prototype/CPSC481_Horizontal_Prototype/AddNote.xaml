@@ -8,8 +8,9 @@
     <Canvas HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="322" Background="#FFF7EDED" Margin="0,0,-22,0">
         <TextBox x:Name="txtNote" Height="180" Canvas.Left="10" TextWrapping="Wrap" Text="TextBox" Canvas.Top="69" Width="302"/>
         <Label Content="Write Note For Kitchen" Canvas.Left="10" Canvas.Top="10" Width="188"/>
-        <Button Content="Cancel" Canvas.Left="10" Canvas.Top="254" Width="75" Height="36" Click="Button_Click_1"/>
+        <Button x:Name="btn_cancel" Content="Cancel" Canvas.Left="10" Canvas.Top="254" Width="75" Height="36" Click="Button_Click_1"/>
         <Button Content="Clear" Canvas.Left="90" Canvas.Top="254" Width="75" Height="36" Click="Button_Click"/>
         <Button Content="Done For Current Item" Canvas.Left="184" Canvas.Top="254" Width="128" Height="36" Click="changeToOrderAdded"/>
+        <Label x:Name="lblTableNum" Content="" Canvas.Left="10" Canvas.Top="36"/>
     </Canvas>
 </UserControl>

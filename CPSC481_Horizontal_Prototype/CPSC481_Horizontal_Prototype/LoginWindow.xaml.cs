@@ -28,5 +28,12 @@ namespace CPSC481_Horizontal_Prototype
         {
             MainWindow.switchToTableView();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        
     }
 }

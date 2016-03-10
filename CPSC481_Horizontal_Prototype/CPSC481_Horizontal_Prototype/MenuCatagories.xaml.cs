@@ -22,7 +22,8 @@ namespace CPSC481_Horizontal_Prototype
         public MenuCatagories()
         {
             InitializeComponent();
-            btnNextItem.IsEnabled = false;
+            lblTable.Content = MainWindow.tableNum;
+            //btnNextItem.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -49,5 +50,6 @@ namespace CPSC481_Horizontal_Prototype
         {
 
         }
+
     }
 }

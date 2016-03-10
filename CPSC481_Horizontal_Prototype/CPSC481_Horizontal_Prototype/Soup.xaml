@@ -8,7 +8,7 @@
             <Button Content="Select Table" HorizontalAlignment="Left" Margin="234,53,0,0" VerticalAlignment="Top" Width="75" Height="62" Click="Button_Click"/>
             <Button Content="Menu&#xA;" HorizontalAlignment="Left" Margin="234,120,0,0" VerticalAlignment="Top" Width="75" Height="62" Click="Button_Click_1"/>
             <Button Content="Tomato soup" HorizontalAlignment="Left" Margin="131,62,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button Content="Caesar Salad" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="87"/>
+            <Button Content="Caesar Salad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Canvas.Left="10" Canvas.Top="95"/>
             <Button Content="House salad" HorizontalAlignment="Left" Margin="131,95,0,0" VerticalAlignment="Top" Width="75"/>
             <StackPanel HorizontalAlignment="Left" Height="139" Margin="10,120,0,0" VerticalAlignment="Top" Width="87" RenderTransformOrigin="3.71,0.24">
                 <Label Content="Allergies/Diet" MouseEnter="ShowAllergies" MouseLeave="HideAllergies"/>
@@ -19,13 +19,14 @@
             </StackPanel>
             <StackPanel x:Name="popOverAllergies" HorizontalAlignment="Left" Height="100
                         " Margin="102,120,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.24,-0.11" MouseDown="showPopOverAllergies">
-                <Label Content="Test" RenderTransformOrigin="-0.132,-0.192" Margin="0,0,10,0" Height="23"/>
-                <Label Content="Test2" RenderTransformOrigin="0.411,2.538"/>
+                <Label Content="Gluten Free" RenderTransformOrigin="-0.132,-0.192" Margin="0,0,10,0" Height="23"/>
+                <Label Content="Dairy Free" RenderTransformOrigin="0.411,2.538"/>
             </StackPanel>
             <Button Content="Add Note" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Canvas.Left="19" Canvas.Top="300"/>
             <Button x:Name="btnNextItem" Content="Next Item" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="99" Canvas.Top="300"/>
             <Button Content="Void Item" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="179" Canvas.Top="300" Click="Button_Click_3"/>
             <Button Content="Send to Kitchen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Canvas.Left="259" Canvas.Top="300" Click="Button_Click_2"/>
+            <Label x:Name="lblTableNum" Content="" Canvas.Left="99" Canvas.Top="31"/>
         </Canvas>
 
     </Grid>
