@@ -24,6 +24,7 @@ namespace CPSC481_Horizontal_Prototype
         {
             InitializeComponent();
             lblNote.Content = MainWindow.note;
+            lblCustom.Content = lblCustom.Content + MainWindow.customizations;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

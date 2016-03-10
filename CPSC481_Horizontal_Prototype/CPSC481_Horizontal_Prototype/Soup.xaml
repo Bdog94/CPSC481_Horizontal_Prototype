@@ -11,15 +11,14 @@
             <Button x:Name="CaesarSalad" Content="Caesar Salad" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click_5"/>
             <Button Content="House salad" HorizontalAlignment="Left" Margin="131,95,0,0" VerticalAlignment="Top" Width="75"/>
             <StackPanel HorizontalAlignment="Left" Height="139" Margin="10,120,0,0" VerticalAlignment="Top" Width="87" RenderTransformOrigin="3.71,0.24">
-                <Label Content="Allergies/Diet" MouseEnter="ShowAllergies" MouseLeave="HideAllergies"/>
+                <Label x:Name="lblAllergies" Content="Allergies/Diet" MouseEnter="ShowAllergies" MouseLeave="HideAllergies" Margin="0,0,-15,0"/>
                 <Label Content="Add"/>
                 <Label Content="Remove"/>
                 <Label Content="Substitute"/>
                 <Label Content="Side"/>
             </StackPanel>
-            <StackPanel x:Name="popOverAllergies" HorizontalAlignment="Left" Height="100
-                        " Margin="102,120,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.24,-0.11" MouseDown="showPopOverAllergies">
-                <Label Content="Gluten Free" RenderTransformOrigin="-0.132,-0.192" Margin="0,0,10,0" Height="23"/>
+            <StackPanel x:Name="popOverAllergies" HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.24,-0.11" MouseDown="showPopOverAllergies" Canvas.Left="102" Canvas.Top="120" MouseLeave="HideAllergies">
+                <Label Content="Gluten Free" RenderTransformOrigin="-0.132,-0.192" Height="23" MouseDown="addGlutenFree" MouseEnter="ShowAllergies" MouseUp="HideAllergies"/>
                 <Label Content="Dairy Free" RenderTransformOrigin="0.411,2.538"/>
             </StackPanel>
             <Button Content="Add Note" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Canvas.Left="19" Canvas.Top="300"/>
@@ -28,10 +27,10 @@
             <Button Content="Send to Kitchen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Canvas.Left="259" Canvas.Top="300" Click="Button_Click_2"/>
             <Label x:Name="lblTableNum" Content="" Canvas.Left="170" Canvas.Top="31"/>
 
-                <ScrollViewer>
-                <Label x:Name="CurrentOrder" Content=" Label " Height="57" Width="130"/>
+            <ScrollViewer>
+                <Label x:Name="CurrentOrder" Content="" Height="57" Width="130"/>
             </ScrollViewer>
- 
+
 
         </Canvas>
 

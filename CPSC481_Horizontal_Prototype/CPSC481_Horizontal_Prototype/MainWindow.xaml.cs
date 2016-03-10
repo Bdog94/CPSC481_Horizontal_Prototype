@@ -23,6 +23,7 @@ namespace CPSC481_Horizontal_Prototype
         static MainWindow m;
         public static String note;
         public static String tableNum;
+        public static String customizations;
         static System.Windows.Threading.DispatcherTimer dispatcherTimer;
         //Soup s = new Soup();
         public MainWindow()

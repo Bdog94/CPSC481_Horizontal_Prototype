@@ -20,6 +20,7 @@ namespace CPSC481_Horizontal_Prototype
     public partial class Soup : UserControl
     {
         string caesarSalad = "";
+        bool showAllergies = false;
         public Soup()
         {
             InitializeComponent();
@@ -36,7 +37,20 @@ namespace CPSC481_Horizontal_Prototype
 
         private void ShowAllergies(object sender, MouseEventArgs e)
         {
-            popOverAllergies.Visibility = Visibility.Visible;
+            Label l = e.Source as Label;
+
+            if (l.Equals(lblAllergies))
+            {
+                showAllergies = true;
+            }
+            if (showAllergies)
+            {
+                popOverAllergies.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                HideAllergies(sender, e);
+            }
         }
 
         private void HideAllergies(object sender, MouseEventArgs e)
@@ -83,6 +97,15 @@ namespace CPSC481_Horizontal_Prototype
             caesarSalad = caesarSalad + "Caesar Salad" + System.Environment.NewLine;
             CurrentOrder.Content = caesarSalad;
 
+        }
+
+        private void addGlutenFree(object sender, MouseButtonEventArgs e)
+        {
+            showAllergies = false;
+            MainWindow.customizations += "Gluten Free";
+
+            caesarSalad = caesarSalad + "Gluten Free" + System.Environment.NewLine;
+            CurrentOrder.Content = caesarSalad;
         }
 
        
