@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Height="500" Width="500">
     <Canvas Height="500" VerticalAlignment="Top" RenderTransformOrigin="-1.61,-0.72" Background="#FFE4EBF7" HorizontalAlignment="Left" Width="500">
-        <Button Content="Clam Soup" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="87"/>
+        <Button Content="Clam Soup" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="87" IsEnabled="False"/>
         <Button Content="Select Table" HorizontalAlignment="Left" Margin="234,53,0,0" VerticalAlignment="Top" Width="75" Height="62" Click="Button_Click"/>
         <Button Content="Menu&#xA;" HorizontalAlignment="Left" Margin="234,120,0,0" VerticalAlignment="Top" Width="75" Height="62" Click="Button_Click_1"/>
-        <Button Content="Tomato soup" HorizontalAlignment="Left" Margin="131,62,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Tomato soup" HorizontalAlignment="Left" Margin="131,62,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
         <Button x:Name="CaesarSalad" Content="Caesar Salad" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click_5"/>
-        <Button Content="House salad" HorizontalAlignment="Left" Margin="131,95,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="House salad" HorizontalAlignment="Left" Margin="131,95,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
         <StackPanel HorizontalAlignment="Left" Height="139" Margin="10,120,0,0" VerticalAlignment="Top" Width="87" RenderTransformOrigin="3.71,0.24">
             <Label x:Name="lblAllergies" Content="Allergies/Diet" MouseEnter="ShowAllergies" MouseLeave="HideAllergies" Margin="0,0,-15,0"/>
             <Label Content="Add"/>
@@ -26,10 +26,10 @@
         <Button Content="Send to Kitchen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Canvas.Left="259" Canvas.Top="300" Click="Button_Click_2"/>
         <Label x:Name="lblTableNum" Content="" Canvas.Left="234" Canvas.Top="10" RenderTransformOrigin="5.3,-0.5"/>
 
-        <ScrollViewer>
-            <Label x:Name="CurrentOrder" Content="" Height="57" Width="130"/>
+        <ScrollViewer Canvas.Left="162" Canvas.Top="202" Height="93">
+            <Label x:Name="CurrentOrder" Content="" Height="88" Width="130"/>
         </ScrollViewer>
-        <Label Content="Table Num:" Canvas.Left="152" Canvas.Top="10" RenderTransformOrigin="0,-0.231" FontWeight="Bold"/>
+        <Label Content="Table Number" Canvas.Left="152" Canvas.Top="10" RenderTransformOrigin="0,-0.231" FontWeight="Bold"/>
 
 
     </Canvas>
