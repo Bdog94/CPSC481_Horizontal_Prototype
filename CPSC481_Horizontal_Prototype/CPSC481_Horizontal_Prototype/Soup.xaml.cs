@@ -26,6 +26,7 @@ namespace CPSC481_Horizontal_Prototype
             InitializeComponent();
             lblTableNum.Content = MainWindow.tableNum;
             popOverAllergies.Visibility = Visibility.Hidden;
+            stkOptions.Visibility = Visibility.Hidden;
 
 
         }
@@ -56,8 +57,6 @@ namespace CPSC481_Horizontal_Prototype
         private void HideAllergies(object sender, MouseEventArgs e)
         {
             popOverAllergies.Visibility = Visibility.Hidden;
-
-
 
            
         }
@@ -96,6 +95,7 @@ namespace CPSC481_Horizontal_Prototype
         {
             caesarSalad = caesarSalad + "Caesar Salad" + System.Environment.NewLine;
             CurrentOrder.Content = caesarSalad;
+            stkOptions.Visibility = Visibility.Visible;
 
         }
 
@@ -120,6 +120,11 @@ namespace CPSC481_Horizontal_Prototype
         private void HideAllergies(object sender, MouseButtonEventArgs e)
         {
 
+        }
+
+        private void stkOptionsHide(object sender, MouseButtonEventArgs e)
+        {
+            stkOptions.Visibility = Visibility.Hidden;
         }
 
        

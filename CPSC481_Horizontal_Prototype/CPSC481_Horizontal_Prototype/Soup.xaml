@@ -9,8 +9,8 @@
         <Button Content="Tomato soup" HorizontalAlignment="Left" Margin="131,62,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="CaesarSalad" Content="Caesar Salad" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click_5"/>
         <Button Content="House salad" HorizontalAlignment="Left" Margin="131,95,0,0" VerticalAlignment="Top" Width="75"/>
-        <StackPanel HorizontalAlignment="Left" Height="139" Margin="10,120,0,0" VerticalAlignment="Top" Width="87" RenderTransformOrigin="3.71,0.24">
-            <Label x:Name="lblAllergies" Content="Allergies/Diet" MouseEnter="ShowAllergies" MouseLeave="HideAllergies" Margin="0,0,-15,0"/>
+        <StackPanel x:Name="stkOptions" HorizontalAlignment="Left" Height="139" Margin="10,120,0,0" VerticalAlignment="Top" Width="87" RenderTransformOrigin="3.71,0.24">
+            <Label x:Name="lblAllergies" Content="Allergies/Diet" MouseEnter="ShowAllergies" MouseLeave="HideAllergies" Margin="0,0,-15,0" MouseDown="stkOptionsHide"/>
             <Label Content="Add"/>
             <Label Content="Remove"/>
             <Label Content="Substitute"/>
