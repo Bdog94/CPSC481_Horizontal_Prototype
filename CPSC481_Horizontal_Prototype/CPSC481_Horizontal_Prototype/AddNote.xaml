@@ -11,6 +11,7 @@
         <Button x:Name="btn_cancel" Content="Cancel" Canvas.Left="10" Canvas.Top="254" Width="75" Height="36" Click="Button_Click_1"/>
         <Button Content="Clear" Canvas.Left="90" Canvas.Top="254" Width="75" Height="36" Click="Button_Click"/>
         <Button Content="Done For Current Item" Canvas.Left="184" Canvas.Top="254" Width="128" Height="36" Click="changeToOrderAdded"/>
-        <Label x:Name="lblTableNum" Content="" Canvas.Left="10" Canvas.Top="36"/>
+        <Label x:Name="lblTableNum" Content="" Canvas.Left="107" Canvas.Top="36" RenderTransformOrigin="7.2,0.692"/>
+        <Label Content="Table Num:" Canvas.Left="21" Canvas.Top="36" RenderTransformOrigin="0,-0.231" FontWeight="Bold"/>
     </Canvas>
 </UserControl>

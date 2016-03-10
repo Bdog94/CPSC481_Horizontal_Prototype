@@ -8,7 +8,7 @@
     <Grid>
         <Canvas HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="500" Background="#FFF9F9F9">
             <Label x:Name="lblNote" Content="Message" Canvas.Left="10" Canvas.Top="101" Width="198"/>
-            <Button Content="Send To Kitchen" Canvas.Left="189" Canvas.Top="251" Width="101" Click="Button_Click"/>
+            <Button Content="Confrim" Canvas.Left="189" Canvas.Top="251" Width="101" Click="Button_Click"/>
             <Label x:Name="lblFood" Content="Caesar Salad" Canvas.Left="10" Canvas.Top="41"/>
             <Label x:Name="lblCustom" Content="Custom: " Canvas.Left="10" Canvas.Top="67" Width="280"/>
             <Button Content="Change Note" Canvas.Left="100" Canvas.Top="251" Width="75" Click="Button_Click_1"/>

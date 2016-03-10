@@ -13,7 +13,8 @@
         <Button Content="Menu&#xD;&#xA;" HorizontalAlignment="Left" Margin="327,152,0,0" VerticalAlignment="Top" Width="75" Height="62" Click="Button_Click_2" IsEnabled="False"/>
         <Button Content="Sides" HorizontalAlignment="Left" Margin="34,194,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="-0.174,0.203" IsEnabled="False" />
         <Button Content="Specials" HorizontalAlignment="Left" Margin="161,194,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="-0.174,0.203" IsEnabled="False"/>
-        <Label x:Name="lblTable" Content="" HorizontalAlignment="Left" Margin="93,33,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label x:Name="lblTable" Content="" HorizontalAlignment="Left" Margin="123,33,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label Content="Table Number:" HorizontalAlignment="Left" Margin="34,33,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>
