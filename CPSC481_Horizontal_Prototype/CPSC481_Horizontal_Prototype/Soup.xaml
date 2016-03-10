@@ -1,9 +1,8 @@
 ﻿<UserControl x:Class="CPSC481_Horizontal_Prototype.Soup"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Height="300" Width="366">
-    <Grid Margin="0,0,-83,-43">
-        <Canvas Height="330" VerticalAlignment="Top" RenderTransformOrigin="-1.61,-0.72" Background="#FFE4EBF7" Margin="10,13,0,0" HorizontalAlignment="Left" Width="396">
+        Height="500" Width="500">
+        <Canvas Height="500" VerticalAlignment="Top" RenderTransformOrigin="-1.61,-0.72" Background="#FFE4EBF7" HorizontalAlignment="Left" Width="500">
             <Button Content="Clam Soup" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="87"/>
             <Button Content="Select Table" HorizontalAlignment="Left" Margin="234,53,0,0" VerticalAlignment="Top" Width="75" Height="62" Click="Button_Click"/>
             <Button Content="Menu&#xA;" HorizontalAlignment="Left" Margin="234,120,0,0" VerticalAlignment="Top" Width="75" Height="62" Click="Button_Click_1"/>
@@ -19,7 +18,7 @@
             </StackPanel>
             <StackPanel x:Name="popOverAllergies" HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.24,-0.11" MouseDown="showPopOverAllergies" Canvas.Left="102" Canvas.Top="120" MouseLeave="HideAllergies">
                 <Label Content="Gluten Free" RenderTransformOrigin="-0.132,-0.192" Height="23" MouseDown="addGlutenFree" MouseEnter="ShowAllergies" MouseUp="HideAllergies"/>
-                <Label Content="Dairy Free" RenderTransformOrigin="0.411,2.538"/>
+                <Label Content="Dairy Free" RenderTransformOrigin="0.411,2.538" MouseDown="addDairyFree"/>
             </StackPanel>
             <Button Content="Add Note" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Button_Click_4" Canvas.Left="19" Canvas.Top="300"/>
             <Button x:Name="btnNextItem" Content="Next Item" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="99" Canvas.Top="300"/>
@@ -34,5 +33,5 @@
 
         </Canvas>
 
-    </Grid>
+
 </UserControl>

@@ -102,10 +102,24 @@ namespace CPSC481_Horizontal_Prototype
         private void addGlutenFree(object sender, MouseButtonEventArgs e)
         {
             showAllergies = false;
-            MainWindow.customizations += "Gluten Free";
+            MainWindow.customizations += "Gluten Free ";
 
             caesarSalad = caesarSalad + "Gluten Free" + System.Environment.NewLine;
             CurrentOrder.Content = caesarSalad;
+        }
+
+        private void addDairyFree(object sender, MouseButtonEventArgs e)
+        {
+            showAllergies = false;
+            MainWindow.customizations += "Dairy Free ";
+
+            caesarSalad = caesarSalad + "Dairy Free" + System.Environment.NewLine;
+            CurrentOrder.Content = caesarSalad;
+        }
+
+        private void HideAllergies(object sender, MouseButtonEventArgs e)
+        {
+
         }
 
        

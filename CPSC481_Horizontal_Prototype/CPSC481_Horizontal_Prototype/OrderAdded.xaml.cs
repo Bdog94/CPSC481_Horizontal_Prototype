@@ -34,5 +34,10 @@ namespace CPSC481_Horizontal_Prototype
             MainWindow.switchToTableView();
             
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow.switchToAddNoteView();
+        }
     }
 }
