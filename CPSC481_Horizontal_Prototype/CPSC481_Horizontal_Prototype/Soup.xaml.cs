@@ -19,11 +19,14 @@ namespace CPSC481_Horizontal_Prototype
     /// </summary>
     public partial class Soup : UserControl
     {
+        string caesarSalad = "";
         public Soup()
         {
             InitializeComponent();
             lblTableNum.Content = MainWindow.tableNum;
             popOverAllergies.Visibility = Visibility.Hidden;
+
+
         }
 
         private void showPopOverAllergies(object sender, MouseButtonEventArgs e)
@@ -71,6 +74,15 @@ namespace CPSC481_Horizontal_Prototype
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             MainWindow.switchToMenuCatagories();
+
+            
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            caesarSalad = caesarSalad + "Caesar Salad" + System.Environment.NewLine;
+            CurrentOrder.Content = caesarSalad;
+
         }
 
        
