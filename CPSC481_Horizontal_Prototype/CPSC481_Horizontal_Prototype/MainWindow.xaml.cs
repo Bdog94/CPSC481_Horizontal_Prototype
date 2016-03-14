@@ -48,7 +48,8 @@ namespace CPSC481_Horizontal_Prototype
         private static void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             dispatcherTimer.Stop();
-            MessageBox.Show("Food is ready \n" + "Table Num: " + tableNum + "\nFood: ");
+            MessageBox.Show("Food is ready \n" + "Table Num: " + tableNum + "\nFood: Caesar Salad" + "\nCustomizations: " + customizations
+                );
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
